@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Montaje">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/volver"
+            android:layout_width="38dp"
+            android:layout_height="48dp"
+            android:background="@drawable/flecha_atras" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/placa"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:id="@+id/info1"
+                        android:text="Indique su placa base:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                    android:id="@+id/cuantos_list1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lista1"
+                        android:layout_width="match_parent"
+                        android:layout_height="410dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/Proc"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:id="@+id/info2"
+                        android:text="Indique el procesador:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cuantos_list2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lista2"
+                        android:layout_width="match_parent"
+                        android:layout_height="410dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/Memo"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:id="@+id/info3"
+                        android:text="Ahora, escoja su RAM:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cuantos_list3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lista3"
+                        android:layout_width="match_parent"
+                        android:layout_height="410dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/Discos"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:id="@+id/info4"
+                        android:text="Su disco duro a usar:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cuantos_list4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lista4"
+                        android:layout_width="match_parent"
+                        android:layout_height="410dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/grafic"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:id="@+id/info5"
+                        android:text="Por último, ¿quiere usted gráfica extra?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/cuantos_list5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+
+                    <ToggleButton
+                        android:id="@+id/noquierografica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        android:text="SIN\nGRÁFICA"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/lista5"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+         </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/pie_layout_list"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#C9C3C3"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/sorteo_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="sorteo de \nperiféricos"/>
+
+                <TextView
+                    android:id="@+id/dinerocompra_list"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="40dp"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/comprar_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="COMPRAR"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    </TabHost>
+
+    <include layout="@layout/content_montaje" />
+
+</LinearLayout>
