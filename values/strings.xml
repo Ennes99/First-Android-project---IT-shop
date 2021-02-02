@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Proyecto_AlePazos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation_menu"></string>
+    <string name="title_activity_compra_final"></string>
+    <string name="title_activity_ordenadores_ya_montados"></string>
+    <string name="title_activity_montaje"></string>
+    <string name="first_fragment_label"></string>
+    <string name="first2_fragment_label"></string>
+    <string name="first3_fragment_label"></string>
+    <string name="first4_fragment_label"></string>
+    <string name="first5_fragment_label"></string>
+    <string name="second_fragment_label"></string>
+    <string name="second2_fragment_label"></string>
+    <string name="second3_fragment_label"></string>
+    <string name="second4_fragment_label"></string>
+    <string name="second5_fragment_label"></string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+</resources>
