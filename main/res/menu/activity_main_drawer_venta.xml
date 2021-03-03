@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_comprar_venta"
+            android:icon="@drawable/icono_comprar"
+            android:title="Comprar" />
+        <item
+            android:id="@+id/nav_vender_venta"
+            android:icon="@drawable/icono_vender"
+            android:title="Reparar" />
+        <item
+            android:id="@+id/nav_home_venta"
+            android:icon="@drawable/icono_home"
+            android:title="Home" />
+    </group>
+
+    <item
+        android:id="@+id/navigation_subheader_venta"
+        android:title="OPCIONES DEL SISTEMA">
+        <menu>
+            <item
+                android:id="@+id/submenu_salir_1_venta"
+                android:title="Actualizar mi app"/>
+            <item
+                android:id="@+id/submenu_salir_2_venta"
+                android:title="Ajustes de'\n'la cuenta"/>
+        </menu>
+    </item>
+</menu>

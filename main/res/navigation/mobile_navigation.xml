@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.proyecto_alepazos.ui.home.HomeFragment"
+        android:label="hablar"
+        tools:layout="@layout/menu_nav_principal" />
+
+    <fragment
+        android:id="@+id/nav_comprar"
+        android:name="com.example.proyecto_alepazos.ui.compra.CompraFragment"
+        android:label="comprar"
+        tools:layout="@layout/fragment_comprar" />
+
+    <fragment
+        android:id="@+id/nav_vender"
+        android:name="com.example.proyecto_alepazos.ui.venta.VentaFragment"
+        android:label="vender"
+        tools:layout="@layout/fragment_vender" />
+
+
+</navigation>
